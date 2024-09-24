@@ -23,3 +23,26 @@ The primary purpose of Protected Variability is to:
 1. Improved maintainability: Changes are localized, reducing the risk of ripple effects.
 2. Increased flexibility: New variations can be added without modifying existing code.
 3. Reduced coupling: Classes are decoupled, making it easier to modify or replace individual components.
+
+# Without Protected Variability:
+
+
+
+public class PaymentGateway {
+    public void processPayment(String paymentMethod, double amount) {
+        if (paymentMethod.equals("creditCard")) {
+            // Credit card-specific logic
+        } else if (paymentMethod.equals("paypal")) {
+            // PayPal-specific logic
+        } else {
+            // Bank transfer-specific logic
+        }
+    }
+}
+
+
+
+# With Protected Variability:
+check code and run
+
+
