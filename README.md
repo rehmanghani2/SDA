@@ -48,10 +48,10 @@ public class PaymentGateway {
 check code and run
 # Explanation Of Code
 
-without PV, the PaymentProcessor class has a complex conditional statement to handle different payment gateways. This makes it difficult to add new gateways without modifying existing code.
+without Protected Variability, the PaymentProcessor class has a complex conditional statement to handle different payment gateways. This makes it difficult to add new gateways without modifying existing code.
 
 
- By applying PV, we:
+ By applying Protected Variability, we:
 
 
 1. Introduced an abstract PaymentProcessor class with an abstract processPayment method.
